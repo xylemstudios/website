@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/opensans.woff2') format('woff2'),
+         url('fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14pt;
+}
+
+html {
+    background-color: rgb(0, 26, 54);
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: rgb(215, 228, 252);
+    padding: 1em;
+    margin: auto;
+    max-width: 800px;
+    min-height: calc(100% - 2em);
+}
+
+a {
+    color: rgb(60, 154, 241);
+}
+
+p, section > aside {
+    margin-bottom: 2em;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 0.75em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    font-size: 1.85em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h1::before {
+    content: "# ";
+    opacity: 0.5;
+}
+h2::before {
+    content: "## ";
+    opacity: 0.5;
+}
+h3::before {
+    content: "### ";
+    opacity: 0.5;
+}
+
+section {
+    line-height: 1.7em;
+    text-align: justify;
+    margin-bottom: 3em;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+aside > img {
+    box-shadow: 0px 0px 5em rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em;
+}
